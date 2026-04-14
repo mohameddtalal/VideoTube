@@ -1,0 +1,19 @@
+*{
+color: red;
+}
+html,body{
+    height:100%;
+    padding:0;
+    margin:0;
+}
+#pagecontainer{
+    height:100%;
+    width:100%;
+    background-color:#fafafa
+}
+#mastHeadContainer{
+    width:100%;
+    height:56px;
+    padding:
+    background-color:#212121;
+}
