@@ -1,0 +1,33 @@
+<?php
+require_once("includes/header.php");
+
+if(!isset($_GET["term"]) || $_GET["term"]==""){
+    echo "You must enter a search term";
+    exit();
+}
+
+$term=$_GET["term"];
+
+if(!isset($_G))
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+require_once("includes/footer.php")
+?>
