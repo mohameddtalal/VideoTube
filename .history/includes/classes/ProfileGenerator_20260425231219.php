@@ -1,0 +1,24 @@
+<?php
+require_once("ProfileData.php");
+
+class ProfileGenerator{
+
+private $con,$userLoggedInObj,$profileData;
+public function __construct($con,$userLoggedInObj,$profileUsername)
+{
+$this->con=$con;
+$this->userLoggedInObj=$userLoggedInObj;
+$this->profileData=new ProfileData($con,$p);
+}
+
+public function create(){
+
+
+}
+
+
+}
+
+
+
+?>
