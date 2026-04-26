@@ -1,3 +1,0 @@
-function likeVideo(button, videoId) {
-   $ 
-}
