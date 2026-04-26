@@ -33,6 +33,23 @@ class VideoUploadData {
         return $this->uploadedBy;
     }
 
+    public function updateDetails($con,$videoId){
+        $query=$con->prepare("UPDATE videos SET title=:title ,description=:description , privacy=:privacy ,category=:category WHERE id=:videoId");
+           $title       = $this->getTitle();
+            $description = $this->getDescription();
+            $privacy     = $this->getPrivacy();
+            $category    = $this->getCategory();
+ 
+    $query->bindParam(":title",       $title);
+    $query->bindParam(":description", $description);
+    $query->bindParam(":privacy",     $privacy);
+    $query->bindParam(":category",    $category);
+    $query->bindParam(":videoId",     $videoId);
+
+        return $query->execute();
+
+    }
+
 }
 
 

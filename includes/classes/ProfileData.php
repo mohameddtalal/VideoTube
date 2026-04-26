@@ -58,6 +58,7 @@ public function getAllUserDetails(){
         "Sign up date"=>$this->getSignUpDate()
     );
 }
+
 private function getTotalViews(){
     $query=$this->con->prepare("SELECT sum(views) FROM videos WHERE uploadedBy=:uploadedBy");
     $username=$this->getProfileUsername();
@@ -66,6 +67,7 @@ private function getTotalViews(){
 
     return $query->fetchColumn();
 }
+
 private function getSignUpDate(){
    $date=$this->profileUserObj->getSignUpDate();
    return date("F jS, Y",strtotime($date));
