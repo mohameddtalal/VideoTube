@@ -1,2 +1,0 @@
-# Ignore VS Code History extension folder
-.history/git rm -r --cached .history
